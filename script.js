@@ -4,8 +4,6 @@ const CONFIG = {
   email: "agmadsinkis1967@gmail.com",
   hours: "We come to you. Call or message to book.",
   formKey: "",  // free access key from web3forms.com (enter the email above). Empty = opens the visitor's email app instead.
-  address: "",  // full address with postal code. Shows an "Open in Google Maps" button.
-  mapUrl: "",   // optional: the exact Google Maps share link. Overrides the address search.
   whatsapp: "16478039249", // digits with country code, e.g. "16135550100". Empty hides the button.
   city: "Ottawa", // e.g. "Ottawa"
   areas: [],    // e.g. ["Kanata", "Nepean", "Orleans", "Gatineau"]. Empty hides the section.
@@ -133,15 +131,6 @@ if (CONFIG.areas.length) {
   $("#areas").hidden = false;
   $("#areas-title").textContent = `Carpet and flooring installers${CONFIG.city ? " in " + CONFIG.city : ""}`;
   CONFIG.areas.forEach((a) => $("#areas-list").append(el("li", "", a)));
-}
-
-// Address and map link (only shown when CONFIG.address is set)
-if (CONFIG.address) {
-  $("#addr").hidden = false;
-  $("#addr").textContent = CONFIG.address;
-  const m = $("#map");
-  m.hidden = false;
-  m.href = CONFIG.mapUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CONFIG.address)}`;
 }
 
 // WhatsApp (only shown when CONFIG.whatsapp is set)
