@@ -166,3 +166,9 @@ dialog[open] { animation: pop .25s cubic-bezier(.2,.7,.2,1); }
 .stats strong { display: block; font-family: var(--serif); font-size: 24px; font-weight: 600; line-height: 1.2; color: var(--accent); }
 .stats span { font-size: 14px; color: var(--muted); }
 @media (min-width: 768px) { .stats strong { font-size: 48px; line-height: 1; } .stats ul { padding: 48px 24px; } }
+#stairs .card { padding: 8px; }
+
+.pos-bottom { object-position: center 85%; }
+@media (min-width: 768px) { .cards.four { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 640px) and (max-width: 767px) { .cards.four { grid-template-columns: repeat(2, 1fr); } }
+.hero-media img { border: 1px solid var(--line); }

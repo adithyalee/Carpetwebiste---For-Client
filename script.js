@@ -1,7 +1,7 @@
 // Edit these placeholders with the real company details.
 const CONFIG = {
   phone: "(647) 803 9249",
-  email: "agmadsinkis1967@gmail.com",
+  email: "ahmadsinkis1967@gmail.com",
   hours: "We come to you. Call or message to book.",
   formKey: "",  // free access key from web3forms.com (enter the email above). Empty = opens the visitor's email app instead.
   whatsapp: "16478039249", // digits with country code, e.g. "16135550100". Empty hides the button.
