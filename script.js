@@ -137,7 +137,7 @@ if (CONFIG.areas.length) {
 if (CONFIG.whatsapp) {
   const w = $("#whatsapp");
   w.hidden = false;
-  w.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Hello CarpetDesign, I would like a quote.")}`;
+  w.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent("Hello Carpet Designer Flooring, I would like a quote.")}`;
   w.target = "_blank";
   w.rel = "noopener";
 }
